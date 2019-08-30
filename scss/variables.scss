@@ -1,0 +1,9 @@
+/*colors used are stored here*/
+$colors: (
+  latern: #1aff8c,
+  bold-latern: #00e875,
+  footer-color: #000
+);
+@function color($color) {
+  @return map-get($colors, $color);
+}

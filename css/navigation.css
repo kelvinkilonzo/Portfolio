@@ -1,0 +1,101 @@
+header {
+  position: relative;
+  display: block; }
+  header .mobile-nav {
+    background: #fff;
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 1px solid color(latern); }
+  header #ham {
+    width: 50px;
+    padding: 7px;
+    cursor: pointer; }
+    header #ham span {
+      display: block;
+      height: 3px;
+      background: color(bold-latern);
+      margin: 4px; }
+  header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: color(latern);
+    z-index: 300;
+    display: none;
+    animation: navZoom 0.8s linear forwards; }
+  header #exit {
+    font-size: 1.9rem;
+    position: absolute;
+    right: 20px;
+    top: 5px;
+    padding: 6px;
+    width: 50px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer; }
+  header ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  header li {
+    list-style: none; }
+  header a {
+    text-decoration: none;
+    color: color(bold-latern);
+    display: block;
+    padding: 10px;
+    margin-bottom: 5px;
+    background: #f3f3f3;
+    width: 200px;
+    text-align: center; }
+
+@keyframes navZoom {
+  0% {
+    top: -1000px; }
+  100% {
+    top: 0; } }
+@media screen and (min-width: 1000px) {
+  header {
+    position: relative;
+    display: block; }
+    header nav {
+      position: inherit;
+      width: 100%;
+      height: 50px;
+      background: #fff;
+      display: none;
+      animation: navZoom 0.8s linear forwards;
+      display: block; }
+    header #ham {
+      display: none; }
+    header #exit {
+      font-size: 1.9rem;
+      position: absolute;
+      right: 20px;
+      top: 5px;
+      padding: 6px;
+      width: 50px;
+      text-align: center;
+      color: #fff;
+      display: none; }
+    header ul {
+      position: inherit;
+      display: flex;
+      justify-content: center; }
+    header li {
+      list-style: none; }
+    header a {
+      text-decoration: none;
+      color: #000;
+      display: block;
+      padding: 10px 20px;
+      margin: 0 10px 0 0;
+      background: none;
+      width: inherit;
+      text-align: center;
+      text-transform: uppercase; } }
+
+/*# sourceMappingURL=navigation.css.map */
